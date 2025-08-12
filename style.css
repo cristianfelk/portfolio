@@ -1,0 +1,298 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: deepskyblue;
+    transition: .2s;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: deepskyblue;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgba(0, 191, 255, 0.435);
+    transform: scale(1.05);
+}
+
+/* CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7c7c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav  ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.logo img {
+    width: 200px;
+}
+
+/* TOPO */
+
+section.topo-site {
+    padding: 40px 4%;
+    
+}
+
+section.topo-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site h1 {
+    color: #fff;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.topo-site .txt-topo-site h1 span {
+    color: deepskyblue;
+}
+
+.topo-site .txt-topo-site  p {
+    color: #fff;
+    margin: 40px 0;
+    text-align: left;
+}
+
+.topo-site .img-topo-site {
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+.img-topo-site img {
+    width: 300px;
+    border-radius: 50px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+/* ESPECIALIDADES */
+
+section.especialidades {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0a;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff71;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 68px;
+    color: deepskyblue;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/* ESTILO SOBRE */
+
+section.sobre {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0a;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: deepskyblue;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: deepskyblue;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 4px;
+    transition: .2s;
+}
+
+.img-sobre img {
+    width: 300px;
+    border-radius: 50px;
+}
+
+/* PORTFOLIO */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0a;
+} 
+ 
+section.portfolio .flex {
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.328);
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* RODAPÉ */
+
+footer {
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff0a;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid deepskyblue;
+}
+
+footer .line-footer p i {
+    color: deepskyblue;
+    font-size: 25px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer img {
+    width: 200px;
+}
