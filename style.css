@@ -296,3 +296,67 @@ footer .line-footer p a {
 footer img {
     width: 200px;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Para tablets */
+@media (max-width: 1024px) {
+    section.topo-site .flex,
+    section.especialidades .flex,
+    section.sobre .flex,
+    section.portfolio .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+    }
+
+    .img-topo-site img,
+    .img-sobre img {
+        width: 250px;
+    }
+}
+
+/* Para celulares */
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav.menu-desktop {
+        display: none; /* Aqui futuramente pode entrar um menu hambúrguer */
+    }
+
+    h2.titulo {
+        font-size: 28px;
+    }
+
+    .topo-site h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .topo-site .txt-topo-site p {
+        font-size: 14px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .btn-contato button {
+        padding: 8px 25px;
+        font-size: 16px;
+    }
+
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
